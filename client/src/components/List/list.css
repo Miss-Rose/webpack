@@ -1,0 +1,27 @@
+.list {
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    list-style: none;
+}
+
+li {
+    margin-top: 2px;
+    padding: 8px;
+    background-color: white;
+}
+
+.list-item {
+    background-color: #eee;
+    margin-top: 5px;
+}
+.list-item div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    width: 20px;
+    padding-right: 8px;
+}

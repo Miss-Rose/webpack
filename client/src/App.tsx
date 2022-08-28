@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import logo from './assets/React-icon.png';
+import List from './components/List/List';
 
 
 interface AppProps {
@@ -9,11 +9,12 @@ interface AppProps {
 
 const App: React.FC<AppProps> = ({ title }) => {
     return (
-        <div>
+        <div className="container">
             <h1 className="header">
                 {title}
             </h1>
-            <img src={logo} style={{width: '100px', height: '100px'}} alt='images'/>
+
+            <List />
         </div>
     );
 }

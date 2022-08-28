@@ -5,9 +5,17 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     entry: './src/index.tsx',
     output: {
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'build'),
         clean: true,
+        assetModuleFilename: (pathData) => {
+            const filepath = path
+                .dirname(pathData.filename)
+                .split("/")
+                .slice(1)
+                .join("/");
+            return `${filepath}/[name].[hash][ext][query]`;
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
