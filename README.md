@@ -5,7 +5,7 @@ To run this project you should:
 2. type in terminal npm run start. It will run the client app in development mode. OR 
 type npm run build - it create a build folder.
 You can see client app in http://localhost:3000
-Before starting the server cleate clienmt build
+Before starting the server create client build
 
 3. cd server 
 4. type npm run start - to start a server OR
